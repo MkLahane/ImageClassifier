@@ -1,0 +1,61 @@
+.ai-container {
+  padding: 100px;
+  background: #F6FFE9; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; 
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.ai {
+  background: none;
+  border: 4px dashed black;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.0),
+              5px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ai h1 {
+  font-size: 1.3em;
+  width: 50%;
+
+}
+
+.ai-options {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+select {
+  background: #0B1300;
+  color: white;
+  font-size: 2em;
+  padding: 0.5em 1em;
+  border: 2px dashed white;
+  font-family: 'Ranchers';
+  border-radius: 20px;
+  outline: none;
+} 
+
+
+.ai-options button {
+  font-size: 2em; 
+  padding: 5px 20px;
+  background: #0B1300;
+  outline: none;
+  border: 2px dashed white;
+  font-family: 'Ranchers';
+  color: white;
+}
+

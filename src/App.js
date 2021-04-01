@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Classes from './components/Classes';
+import AI from './components/AI';
+import AIContext from './contexts/AIContext';
 import './App.css';
 
 function App() {
+  const [numberOfClasses, setNumberOfClasses] = useState(2);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AIContext.Provider value={{ numberOfClasses, setNumberOfClasses }}>
+      <div className="App">
+        {/* <h1>{numberOfClasses}</h1> */}
+        <Classes />
+        <div className='ai-container'>
+          <AI />
+        </div>
+      </div>
+    </AIContext.Provider>
   );
 }
 

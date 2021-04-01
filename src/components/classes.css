@@ -1,0 +1,114 @@
+.classes-container {
+    background: #FCFEF9;
+    position: fixed;
+    left: 0px; 
+    top: 0px;
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #0D0D0A;
+    border-radius: 20px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #D5FF9F;
+   
+}
+
+.classes {
+    background: #D5FF9F;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
+    width: 90%;
+    margin: auto;
+}
+
+.class {
+    position: relative;
+    width: 420px;
+    height: 420px;
+}
+
+
+.class-images {
+    border: 4px dashed black;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.0),
+              5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 400px;
+    color: black;
+    font-family: 'Ranchers';
+    font-size: 2em;
+    padding: 5px 5px;   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.img-div {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    
+}
+
+img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.class-images-uploading {
+    border: 4px dashed black;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.0),
+              5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 400px;
+    color: black;
+    font-family: 'Ranchers';
+    font-size: 2em;
+    padding: 5px 5px;   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.img-delete-button   {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 2em;
+    color: black;
+    background: #FF3535;
+    border: 2px dashed white;
+    outline: none;
+    padding: 5px 15px;
+    font-family: 'Ranchers';
+    z-index: 1000000;
+}
+
+.img-delete-button:hover {
+    border: 2px dashed white;
+    color: #FF3535;
+    background: black;
+}
